@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Life MVC Framework</title>
+<?php if($this->head_script){ include_once $this->head_script; }?>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Life</h1>
+
+Lim Industries FramEwork. A lightweight PHP MVC Framework.
+
+<ul>
+
+<li>
+<a href="<?php echo $this->base_url; ?>/home/index">Home</a>
+</li>
+
+<li>
+<a href="<?php echo $this->base_url; ?>/home/about">About</a>
+</li>
+
+</ul>
+
+</header>
+
+<?php include_once $this->view; ?>
+
+<footer>
+
+Copyright 2012 Lim Industries
+
+</footer>
+
+<?php if($this->end_script){ include_once $this->end_script; }?>
+
+</body>
+</html>
+<!-- 
+<?php echo "Memory usage: " . (memory_get_usage(true) / 1024 / 1024) . " MB\r\n";  ?>
+<?php echo "Peak memory usage: " . (memory_get_peak_usage(true) / 1024 / 1024) . " MB\r\n";  ?>
+-->
